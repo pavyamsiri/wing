@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+color-eyre = "0.6.3"
+colored = "3.0.0"
+jiff = "0.2.5"
+reqwest = { version = "0.12.15", features = ["blocking", "multipart"] }
+strip-ansi-escapes = "0.2.1"
+thiserror = "2.0.12"
