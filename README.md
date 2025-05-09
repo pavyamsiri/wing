@@ -14,16 +14,23 @@ cargo install --path <path-to-source>
 
 `cargo` can be installed by [`rustup`](https://rustup.rs/) or your system package manager like `brew` (MacOS), `pacman` (Arch), `apt` (Debian) or `winget` (Windows).
 
-## Usage
+## Webhooks
 
-Before using `wing` you need to set a couple of environment variables to set the webhook you will be sending the completion message to.
-For example a Discord webhook URL looks something like this:
+Discord provides webhooks which are special URLs that allow external applications to automate sending messages. To use `wing` you will need one.
+
+### Getting a webhook
+
+You can find out to get a webhook URL [here](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
+
+The URL will be in this form
 
 ```
 https://discord.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN
 ```
 
-Then we set the following environment variables
+## Usage
+
+Before using `wing` you need to set a couple of environment variables to set the webhook you will use.
 
 - `WING_WEBHOOK_ID`: Set this to the webhook ID.
 - `WING_WEBHOOK_TOKEN`: Set this to the webhook token.
